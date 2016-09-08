@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+		Javascript
+		</title>
+	</head>
+<body>
+
+	<h1 > Welcome to This page</h1>
+	
+	<script>
+		var student = new Array()
+		student[0]="a"
+		student[1]="b"
+		student[3]="c"
+		student[3]="d"
+		document.write("array 1"+"<br>");
+		for (j in student)
+		{
+			document.write(student[j]+"<br>");
+		}
+		
+		var sk = new Array()
+		sk[0]= "e"
+		sk[1]= "f"
+		sk[2]= "g"
+		sk[3]= "h"
+		
+		document.write("array 2"+"<br>");
+		
+		for (j in student)
+		{
+			document.write(sk[j]+"<br>");
+		}
+		
+		var total = student.concat(sk)
+		document.write("array 1 and array 2 merge"+"<br>");
+		for(var i in total)
+		{
+			document.write(total[i]+"<br>");
+		}
+
+	</script>
+
+
+
+</body>
+</html>
+		
+	
+
+		
