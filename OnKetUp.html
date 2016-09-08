@@ -1,0 +1,22 @@
+<html>
+	<head>
+	
+		<title>
+		Javascript
+		</title>
+		<script>
+			function FieldChange(x)
+			{
+				var j =document.getElementById(x).value;
+				document.getElementById(x).value = j.toUpperCase();
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+	<br><br><br>
+	Filed 1 :<input type="text" id="field1" onkeyup="FieldChange(this.id)" />
+
+	</body>
+</html>
