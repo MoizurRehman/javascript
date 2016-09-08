@@ -1,0 +1,37 @@
+<html>
+	<head>
+	
+		<title>
+		Javascript
+		</title>
+		
+	</head>
+	
+	<body>
+	
+	<script>
+		document.write("<br><br><br><h1 align='center'>"+history.length+"</h1>"+"<br>");
+		function Go_Farword()
+		{
+			document.write(history.forward());
+		}
+		function Go_Backword()
+		{
+			document.write(history.back());
+		}
+		function Go_Button( i )
+		{
+			history.go(i)
+		}
+	</script>
+	<button onclick="Go_Farword()">Go Farword</button><br><br>
+	<button onclick="Go_Backword()">Go BackWord</button><br><br>
+	<button onclick="Go_Button( -2 )">Go BackWord 2 URl</button><br><br>
+	<button onclick="Go_Button( -1 )">Go BackWord 1 URl</button><br><br>
+	<button onclick="Go_Button( 2 )">Go Farward 2 URL</button><br><br>
+	<button onclick="Go_Button( 1 )">Go Farward 1 URL</button><br><br>
+
+
+
+</body>
+</html>
