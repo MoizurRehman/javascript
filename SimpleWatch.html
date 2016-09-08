@@ -1,0 +1,32 @@
+<html>
+	<head>
+	
+		<title>
+		Javascript
+		</title>
+		
+	</head>
+	
+	<body>
+	
+	<script>
+	
+	function TimeStart()
+	
+	{	
+		var c = new Date();
+		var d = c.toLocaleTimeString();
+		document.getElementById("heading").innerHTML=d;
+	}
+	
+	time = setInterval(TimeStart,1000);
+			
+	</script>
+	
+	<br><br><br>
+	
+	<h1 id="heading" align="center"></h1>
+
+
+</body>
+</html>

@@ -1,88 +1,30 @@
-<!Doctype HTML>
 <html>
 	<head>
-		<title>Time</title>
+		<title>
+		Javascript
+		</title>
 	</head>
+	
 	<body>
-		<span id="min"></span> : <span id="sec"></span><br>
-		<button id="start" onclick="startStop();">start/stop</button>
-		<script type="text/javascript">
-			var min = document.getElementById('min');
-			var sec = document.getElementById('sec');
-			var st = document.getElementById('start');
-			min.innerHTML = parseInt(prompt('insert amount Minute'));
-			sec.innerHTML = parseInt(prompt('insert amount Second'));
-			function setMinute(){
-				if (sec.innerHTML > 60) {					
-					sec.innerHTML = Number(sec.innerHTML) - 60;
-					min.innerHTML = Number(min.innerHTML) + 1;
-					setMinute();
-				}
+	<script>
+	var c = 0,time;
+			function Time_start()
+			{
+				document.getElementById("start").value=c;
+				c++;
+				time = setTimeout("Time_start()",1000);
+			}
+			function Time_stop()
+			{
+				clearTimeout(time)
+			}
+			
+	</script>
 
-			}
-			setMinute();
-			var start = true;
-			var set;
-			function timer(){
-				set = setInterval(function () {
-					sec.innerHTML = parseInt(sec.innerHTML) -1;
-					if (sec.innerHTML == -1) {
-						min.innerHTML = parseInt(min.innerHTML) -1;
-						sec.innerHTML = 60;
-					}
-					if(Number(sec.innerHTML) == 0 && Number(min.innerHTML) == 0){						
-						clearInterval(set);
-					}
-					
-				}, 1000);
-			}
-			function startStop(){
-				if (start) {
-					timer();
-					start = !start;
-					st.innerHTML = 'Stop';
-					
-				}
-				else{
-					clearInterval(set);
-					start = !start;
-					st.innerHTML = 'Start';
-				}
-			}
-			startStop();
-			/*
-			if(sec.innerHTML == 0 && min.innerHTML == 0){
-						clearInterval(set);
-						start = !start;
-			}
-			*/
-				
-		</script>
+	<input type="button" value="startTime" onclick="Time_start()" >
+	<input type="text" id="start">
+	<input type="button" value="stopTime" onclick="Time_stop()">
 
-		 <script type="text/javascript">
-            /*
-            var start = true;
-            var timer;
-            function startTimer(){
-                timer = setInterval(function(){
-                    var span = document.getElementById('number');
-                    span.innerHTML = Number(span.innerHTML) - 1;
-                }, 1000);
-            };
-            
-            function startStop()
-            {
-                if(start)
-                {
-                    startTimer();
-                    start = !start;
-                }
-                else
-                {
-                    clearInterval(timer);
-                    start = !start;
-                }
-            }*/
-        </script>
-	</body>
+
+</body>
 </html>

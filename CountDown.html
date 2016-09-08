@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+		Javascript
+		</title>
+	</head>
+	
+	<body>
+	<script>
+	var c = 5;
+	function TimeStart()
+	{
+		
+		document.getElementById("heading").innerHTML = c;
+		c--;
+	   if(c<0)
+	   {
+			clearInterval(time);
+			document.getElementById("heading").innerHTML="Time Up"
+	   }
+		
+	}
+	
+	time = setInterval(TimeStart,1000);
+			
+	</script>
+
+	<h1 id="heading" align="center"></h1>
+
+
+</body>
+</html>
