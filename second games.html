@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style >
+body{
+ background-color: rgba(122, 46, 71, 0.86);
+
+}
+h1:hover {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+h1:active {
+    animation-play-state: paused;
+}
+h1
+{
+ color: rgba(77, 135, 186, 0.94);
+ font-size: 3.0em;
+ text-align: center;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <title></title>
+    <SCRIPT LANGUAGE="JavaScript">
+
+var agt=navigator.userAgent.toLowerCase();
+        if (agt.indexOf("mac") != -1)
+            var a="\r";
+        else
+            var a="\n";
+        var max=0;
+        function tlist() {
+            max=tlist.arguments.length;
+            for (i=0; i<max; i++)
+                this[i]=tlist.arguments[i];
+        }
+        tl = new tlist(
+                        "   o"+a+
+                        "  /|\\"+a+
+                        " */ \\*        Sufiyan"+a,
+
+                        "   o_"+a+
+                        "  \<| *"+a+
+                        "  *\>\\         Sufiyan"+a,
+
+                        "  _o/*"+a+
+                        " * |"+a+
+                        "  / \\         Sufiyan"+a,
+
+                        " *\o_"+a+
+                        "  /  *"+a+
+                        " \<\\           Sufiyan"+a,
+
+                        "  _o/*"+a+
+                        " * |"+a+
+                        "  / \\         Sufiyan"+a,
+
+                        " *\\c/*"+a+
+                        "   )"+a+
+                        "  / \>         Sufiyan"+a,
+
+                        "     *"+a+
+                        "  \\__/c"+a+
+                        "   \> \\*       Sufiyan"+a,
+
+                        "   __/"+a+
+                        "    (o_*"+a+
+                        "     \\*       Sufiyan"+a,
+
+                        "      \\ /"+a+
+                        "       |"+a+
+                        "     */o\\*    Sufiyan"+a,
+
+                        "       \\_"+a+
+                        "       ("+a+
+                        "     */o\\*    Sufiyan"+a,
+
+                        "        \<_"+a+
+                        "      __("+a+
+                        "     * o|*    Sufiyan"+a,
+
+                        "         /_"+a+
+                        "      __("+a+
+                        "     * o|*    Sufiyan"+a,
+
+                        "         ___"+a+
+                        "      *\/ \>"+a+
+                        "       o|*    Sufiyan"+a,
+
+                        "        *"+a+
+                        "       o|_/"+a+
+                        "      */  \\   Sufiyan"+a,
+
+                        "        *"+a+
+                        "      _o|_"+a+
+                        "     *   \>\\   Sufiyan"+a,
+
+                        "       _o/*"+a+
+                        "      * |"+a+
+                        "       / \\    Sufiyan"+a,
+
+                        "      *\\o/*"+a+
+                        "        |"+a+
+                        "       / \\    Sufiyan"+a,
+
+                        "      c/*"+a+
+                        "      \<\\"+a+
+                        "      */\\     Sufiyan"+a,
+
+                        "      c__"+a+
+                        "      \<\ *"+a+
+                        "      */\\     Sufiyan"+a,
+
+                        "      c__"+a+
+                        "      /\ *"+a+
+                        "     * /\>     Sufiyan"+a,
+
+                        "      c/*"+a+
+                        "     /(__"+a+
+                        "    * /       Sufiyan"+a,
+
+                        "    __o/*"+a+
+                        "    * (__"+a+
+                        "      \<       Sufiyan"+a,
+
+                        "      __o_"+a+
+                        "     * /  *"+a+
+                        "      \<\\      Sufiyan"+a,
+
+                        "     *_o_"+a+
+                        "       | *"+a+
+                        "      \< \\     Sufiyan"+a,
+
+                        "     *_c_*"+a+
+                        "       |"+a+
+                        "       \>\\     Sufiyan"+a,
+
+                        "     *_c_*"+a+
+                        "       |__"+a+
+                        "       \>      Sufiyan"+a,
+
+                        "     *_c_*"+a+
+                        "     __|__"+a+
+                        "              Sufiyan"+a,
+
+                        " "+a+
+                        "     *_c_*"+a+
+                        "     __)__    Sufiyan"+a,
+
+                        " "+a+
+                        "     *\\c/*"+a+
+                        "     __)__    Sufiyan"+a
+
+        );
+        var x=0;
+        function tick() {
+            document.animation.cheerleader.value = " " + a +
+                    tl[x];
+            x++;
+            if (x != max)
+                setTimeout("tick()", 200);
+            else
+                x = 0;
+        }
+        //  End -->
+    </script>
+
+</head>
+<body OnLoad="tick()">
+
+<center>
+    <form name=animation>
+        <textarea name=cheerleader rows=5 cols=20></textarea>
+        <br>
+        <input type=button value="Start Again" onClick = "tick()">
+    </form>
+</center>
+<h1>Sufiyan Mansoor 1959</h1>
+</body>
+</html>

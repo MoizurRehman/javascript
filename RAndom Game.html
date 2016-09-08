@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <title></title>
+        </head>
+<body>
+<h1 id="intern"></h1>
+<h2 id="uturn"></h2>
+
+<script>
+    function FullGame(){
+        randomNum();
+        function randomNum(){
+            var bigNumber = Math.random();
+            bigNumber = (bigNumber * 10) + 1;
+            bigNumber= Math.floor(bigNumber);
+            return(bigNumber)
+        }
+        var compltRandom = randomNum();
+        var viewInput = +prompt("Guess a Number from 0 to 10");
+
+        calc();
+        function calc(){
+            if (viewInput=== compltRandom){
+                document.getElementById("intern").innerHTML = "Congrats! You Win..."
+            }
+            else if(isNaN(viewInput)){
+                alert("Please only type Numbers");
+                FullGame()
+            }
+            else if (viewInput < 0 || viewInput > 12) {
+                alert("Please type values from 0 to 12");
+                FullGame()
+            }
+            else {
+                (document.getElementById("intern").innerHTML = " You Lose...");
+                (document.getElementById("uturn").innerHTML = "The Number is " + completeRandom);
+                if(confirm("if you play again ?")===true){
+                    FullGame()
+                }
+                else{document.getElementById("intern").innerHTML = "Thanks for your time  !"}
+            }
+        }
+    }
+    FullGame()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
